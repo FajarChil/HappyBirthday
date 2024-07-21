@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <audio id="background-music" src="backsound.mp3" autoplay loop></audio>
+    <div class="container">
+        <h1 class="title">♡Happy Birthday Salma Auestina♡</h1>
+        <div class="flower flower-red">
+            <div class="mid"></div>
+            <div class="Petal1 p1"></div>
+            <div class="Petal1 p2"></div>
+            <div class="Petal1 p3"></div>
+            <div class="Petal1 p4"></div>
+            <div class="Petal2 p1"></div>
+            <div class="Petal2 p2"></div>
+            <div class="Petal2 p3"></div>
+            <div class="Petal2 p4"></div>
+            <div class="Petal3 p1"></div>
+            <div class="Petal3 p2"></div>
+            <div class="Petal3 p3"></div>
+            <div class="Petal3 p4"></div>
+            <div class="stem"></div>
+        </div>
+
+        <div class="flower flower-orange">
+            <div class="mid"></div>
+            <div class="Petal1 p1"></div>
+            <div class="Petal1 p2"></div>
+            <div class="Petal1 p3"></div>
+            <div class="Petal1 p4"></div>
+            <div class="Petal2 p1"></div>
+            <div class="Petal2 p2"></div>
+            <div class="Petal2 p3"></div>
+            <div class="Petal2 p4"></div>
+            <div class="Petal3 p1"></div>
+            <div class="Petal3 p2"></div>
+            <div class="Petal3 p3"></div>
+            <div class="Petal3 p4"></div>
+            <div class="stem"></div>
+        </div>
+
+        <div class="flower flower-yellow">
+            <div class="mid"></div>
+            <div class="Petal1 p1"></div>
+            <div class="Petal1 p2"></div>
+            <div class="Petal1 p3"></div>
+            <div class="Petal1 p4"></div>
+            <div class="Petal2 p1"></div>
+            <div class="Petal2 p2"></div>
+            <div class="Petal2 p3"></div>
+            <div class="Petal2 p4"></div>
+            <div class="Petal3 p1"></div>
+            <div class="Petal3 p2"></div>
+            <div class="Petal3 p3"></div>
+            <div class="Petal3 p4"></div>
+            <div class="stem"></div>
+        </div>
+        <p class="description">
+            cie yang sekarang udah 20 tahun,Happy Birthday ya, maaf cuma bisa ngasih hadiah simpel pas di hari ultahmu,semoga sehat selalu ya, panjang umur dan dimudahkan
+            segala urusanya.btw tau ga sih ini bunga apa? dan kenapa gue nunjukin 3 tangkai bunga dengan warna berbeda ini ke lu?
+            ya gue mau ngasih tau sesuatu tapi karena gue gengsian,jadi gue sampaikan lewat bunga aja ya? ini namanya bunga gerbera
+            tiap dari warna bunga gerbera punya makna tertentu dan tiap jumlah tangkainya pun ada makna nya
+            dan disini gue nunjukin 3 tangkai bunga dengan warna merah,oren dan kuning, kalo lu penasaran sama sesuatu yang mau gue
+            sampain ke elu,coba cari makna dari warna bunga ini. dan makna 3 jumlah tangkai bunga gerbera.kalo udah ketemu jangan di jawab ya kwkw
+            btw sekali lagi selamat ulang tahun ya, semoga liburan nya menyenangkan dan hati hati  - @esaakbar 22 Juli 2024
+        </p>
+    </div>
+    <audio autoplay loop src="backsound.mp3"></audio>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+body {
+    font-family: "Playwrite CZ", cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ECFFE6; /* Warna latar belakang lembut */
+}
+/* Tambahkan ke styles.css */
+
+/* Tambahkan ke styles.css */
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* Warna latar belakang lembut */
+}
+
+
+
+.flower {
+    height: 200px;
+    width: 200px;
+    margin: 60px; /* Jarak antara bunga */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0; /* Mulai dengan bunga tidak terlihat */
+    transform: scale(0); /* Mulai dengan bunga lebih kecil */
+    animation: bloom 1s forwards; /* Terapkan animasi */
+}
+
+.mid {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #000, #ff5e00, #000);
+    z-index: 4;
+    background-size: 5px 5px;
+    filter: drop-shadow(0 0 8px #682600);
+}
+
+.Petal1, .Petal2, .Petal3 {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.Petal1 {
+    z-index: 3;
+    filter: drop-shadow(0 0 5px #e05200);
+}
+
+.Petal1.p1 { transform: rotate(0deg) translateX(80px); }
+.Petal1.p2 { transform: rotate(90deg) translateX(80px); }
+.Petal1.p3 { transform: rotate(180deg) translateX(80px); }
+.Petal1.p4 { transform: rotate(270deg) translateX(80px); }
+
+.Petal2 {
+    z-index: 2;
+    filter: drop-shadow(0 0 5px #e05200);
+}
+
+.Petal2.p1 { transform: rotate(45deg) translateX(100px); }
+.Petal2.p2 { transform: rotate(135deg) translateX(100px); }
+.Petal2.p3 { transform: rotate(225deg) translateX(100px); }
+.Petal2.p4 { transform: rotate(315deg) translateX(100px); }
+
+.Petal3 {
+    z-index: 1;
+    filter: drop-shadow(0 0 2px #fbd702);
+}
+
+.Petal3.p1 { transform: rotate(22.5deg) translateX(70px); }
+.Petal3.p2 { transform: rotate(112.5deg) translateX(70px); }
+.Petal3.p3 { transform: rotate(202.5deg) translateX(70px); }
+.Petal3.p4 { transform: rotate(292.5deg) translateX(70px); }
+
+/* Batang bunga */
+.stem {
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    background-color: green;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Warna bunga */
+.flower-red .Petal1 {
+    background: radial-gradient(circle, #ff0000, #cc0000);
+}
+
+.flower-red .Petal2 {
+    background: radial-gradient(circle, #ff6666, #cc3333);
+}
+
+.flower-red .Petal3 {
+    background: radial-gradient(circle, #ff9999, #cc6666);
+}
+
+.flower-orange .Petal1 {
+    background: radial-gradient(circle, #ff5e00, #cc4c00);
+}
+
+.flower-orange .Petal2 {
+    background: radial-gradient(circle, #ffb74d, #cc8a00);
+}
+
+.flower-orange .Petal3 {
+    background: radial-gradient(circle, #ffcc80, #cc9966);
+}
+
+.flower-yellow .Petal1 {
+    background: radial-gradient(circle, #ffeb3b, #fdd835);
+}
+
+.flower-yellow .Petal2 {
+    background: radial-gradient(circle, #fff176, #fbc02d);
+}
+
+.flower-yellow .Petal3 {
+    background: radial-gradient(circle, #fff9c4, #f4c20c);
+}
+
+/* Animasi mekar bunga */
+@keyframes bloom {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animasi muncul dan hilang pada font */
+@keyframes textReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Muncul dari atas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gaya untuk judul dengan animasi */
+.title {
+    font-family: "Playwrite CZ", cursive;
+    position: absolute;
+    top: 0px; /* Jarak dari atas halaman */
+    text-align: center;
+    font-size: 30px; /* Ukuran font besar */
+    color: #EF5A6F;
+    z-index: 10; /* Pastikan teks berada di atas bunga */
+    width: 100%;
+    animation: textReveal 1s ease-out; /* Terapkan animasi teks */
+}
+.description {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+    margin-top: 20px; /* Jarak atas dari bunga */
+    width: 80%; /* Sesuaikan lebar paragraf */
+}
+
+/* Efek berkedip pada kelopak */
+@keyframes petalBlink {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+/* Terapkan efek berkedip pada kelopak */
+.Petal1, .Petal2, .Petal3 {
+    animation: petalBlink 1.5s ease-in-out infinite; /* Berkedip secara terus-menerus */
+}
+
+/* Efek gelombang pada batang */
+@keyframes stemPulse {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* Terapkan efek gelombang pada batang bunga */
+.stem {
+    animation: stemPulse 2s ease-in-out infinite; /* Gelombang berulang */
+}
+
+/* Efek getaran pada bunga */
+@keyframes flowerShake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Terapkan efek getaran pada bunga */
+.flower {
+    animation: bloom 1s forwards, bloomAdditional 1.5s ease-in-out, flowerShake 1s ease-in-out infinite; /* Tambahkan efek getaran */
+}
+
+/* Efek mengembang dan mengempis pada bunga */
+@keyframes flowerBreath {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Mengembang */
+    }
+    100% {
+        transform: scale(1); /* Mengempis */
+    }
+}
+
+/* Terapkan efek mengembang dan mengempis pada bunga */
+.flower {
+    animation: bloom 1s forwards, flowerBreath 3s ease-in-out infinite; /* Tambahkan efek bernafas */
+}
+
+
+</style>
